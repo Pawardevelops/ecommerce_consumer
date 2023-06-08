@@ -35,7 +35,7 @@ const PriceRow = styled.div`
     align-items: center;
 
 `;
-export default function ({product}) {
+export default function Id({product}) {
     const {addProduct} = useCartContext()
   return (
     <>
@@ -47,10 +47,10 @@ export default function ({product}) {
         </WHiteBox>
         <div>
             <Title>{product?.title}</Title>
-            <p>{product.description}</p>
+            <p>{product?.description}</p>
             <PriceRow>
-            <p>${product.price}</p>
-            <Button onClick={()=>addProduct(product._id)} primary size="l" >
+            <p>${product?.price}</p>
+            <Button onClick={()=>addProduct(product?._id)} primary size="l" >
                   <CartIcons/>
                   Add to cart
                 </Button>
