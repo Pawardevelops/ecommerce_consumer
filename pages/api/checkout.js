@@ -65,8 +65,8 @@ console.log(line_items)
     line_items,
     mode: "payment",
     customer_email: email,
-    success_url: "http://localhost:3000/cart?success=1",
-    cancel_url: "http://localhost:3000/cart?cancel=1",
+    success_url: "https://ecommerce-consumer.vercel.app/cart?success=1",
+    cancel_url: "https://ecommerce-consumer.vercel.app/cart?cancel=1",
     metadata: {
       orderId: orderDoc._id.toString(),
     },
